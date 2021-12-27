@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+nav {
+  padding: 30px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: rgb(49, 49, 143);
+  color: #eee;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 30%;
+}
+
+h3.logo,
+li.nav-item {
+  color: #eee;
+}
+
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
+  gap: 20px;
+}
+
+.card-movies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.card-body {
+  margin-top: 12px;
+}
+
+.card-body h5 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.card-body p {
+  color: rgb(104, 104, 104);
+}
+
+.link-btn {
+  background-color: rgba(80, 80, 255, 0.8);
+  padding: 10px 20px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 12px;
+
+  transition: 0.5s;
+}
+
+.link-btn:hover {
+  background-color: rgba(80, 80, 255, 1);
+}
+
+/* Detail Movie */
+.movie-detail {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+}
+
+.movie-detail .detail-data {
+  list-style: none;
+  width: 40%;
+}
+
+.detail-data li {
+  margin-bottom: 15px;
+}
+
+.btn-back {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: rgba(255, 64, 64, 0.8);
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+
+  transition: 0.5s;
+}
+
+.btn-back:hover {
+  background-color: rgba(255, 64, 64, 1);
+}
