@@ -6,14 +6,11 @@ const Nav = () => {
   return (
     <nav>
       <Link to="/">
-        <h3 className="logo">Brand-Logo</h3>
+        <h3 className="logo">OMDb Movies Database</h3>
       </Link>
       <ul className="nav-links">
         <Link to="/">
           <li className="nav-item">Home</li>
-        </Link>
-        <Link to="/about">
-          <li className="nav-item">About</li>
         </Link>
         <Link to="/movies">
           <li className="nav-item">Movies DB</li>

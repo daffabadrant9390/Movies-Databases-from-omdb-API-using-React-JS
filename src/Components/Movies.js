@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "../styles/custom.css";
 import { Link } from "react-router-dom";
+import intersectionAnimation from "../Helpers/Hooks/intersectionAnimation";
 
 const Movies = () => {
+  // intersectionAnimation();
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("marvel");
@@ -40,9 +42,10 @@ const Movies = () => {
           className="input-search"
           value={search}
           onChange={updateSearchInput}
+          placeholder="Type your movies..."
         />
         <button type="submit" className="btn-search">
-          Search
+          Search movie
         </button>
       </form>
       <div className="movies-container">

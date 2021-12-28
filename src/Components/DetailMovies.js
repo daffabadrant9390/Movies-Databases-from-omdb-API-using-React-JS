@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "../styles/custom.css";
 import { Link } from "react-router-dom";
+import intersectionAnimation from "../Helpers/Hooks/intersectionAnimation";
 
 const DetailMovies = (match) => {
+  intersectionAnimation();
   const [details, setDetails] = useState({});
 
   useEffect(() => {
     getDetailMovie();
-    console.log(match.match.params.id);
+    // console.log(match.match.params.id);
   }, []);
 
   const fetchDetailMovie = () => {
@@ -31,12 +33,17 @@ const DetailMovies = (match) => {
   };
 
   return (
-    <div className="movie-detail">
+    <div className="movie-detail anim">
       <img src={details.Poster} alt={details.Title} />
       <ul className="detail-data">
+        <h4>Movie Details</h4>
         <li>
           <strong>Title: </strong>
           {details.Title}
+        </li>
+        <li>
+          <strong>Genre: </strong>
+          {details.Genre}
         </li>
         <li>
           <strong>Actors:</strong> {details.Actors}
